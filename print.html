@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">2.</strong> Getting started</a></li><li class="chapter-item expanded "><a href="integrations.html"><strong aria-hidden="true">3.</strong> Integration with third-party tools</a></li><li class="chapter-item expanded "><a href="microexecution.html"><strong aria-hidden="true">4.</strong> Micro-execution</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Symbolic execution</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Static analysis</div></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="integrations.html"><strong aria-hidden="true">2.</strong> Integration with third-party tools</a></li><li class="chapter-item expanded "><a href="microexecution.html"><strong aria-hidden="true">3.</strong> Micro-execution</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Symbolic execution</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Static analysis</div></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -170,18 +170,6 @@ using third-party tools (<code>fugue-db</code>).</li>
 </ul>
 </li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="getting-started"><a class="header" href="#getting-started">Getting started</a></h1>
-<p>Fugue relies on a dedicated crate registry, located
-<a href="https://github.com/fugue-re/fugue-oss-registry">here</a>. To use
-Fugue's crates inside your project you must add this registry
-to your <code>.cargo/config</code> file:</p>
-<pre><code class="language-toml">[registries]
-fugue = { index = &quot;ssh://git@github.com/fugue-re/fugue-oss-registry.git&quot; }
-</code></pre>
-<p>Each crate can then be referenced in your <code>Cargo.toml</code>, as below:</p>
-<pre><code class="language-toml">[dependencies]
-fugue = { version = &quot;0.2&quot;, registry = &quot;fugue&quot; }
-</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="integration-with-third-party-tools"><a class="header" href="#integration-with-third-party-tools">Integration with third-party tools</a></h1>
 <p>Fugue interfaces with external tools to populate its database representation
 (i.e., <a href="https://github.com/fugue-re/fugue-core/tree/master/fugue-db">fugue-db</a>). Currently, Fugue has plugins for the following:</p>
